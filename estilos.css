@@ -1,0 +1,201 @@
+/*Quitamos los estilos que vienen por defecto*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/*En body ponemos un color blanco y la letra de Google Fonts*/
+
+body{
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+/*---------------------------ESTILOS DEL HEADER-------------------------------*/
+
+/*En el header creamos un z-indez muy alto para que quede siempre por encima, le ponemos una posición fija una altura de 70px 
+y para aprovechar todo el ancho le ponemos el 100% del ancho de la pantalla del navegador*/
+.header{
+    background-color: #fff;
+    z-index: 100;
+    position:fixed;
+    height:70px;
+    width:100%;
+    /*Entramos en cssmatic y creamos una sombra para el header que nos proporcionará estos valores*/
+    -webkit-box-shadow: 1px 2px 26px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 26px -8px rgba(0,0,0,0.75);
+     box-shadow: 1px 2px 26px -8px rgba(0,0,0,0.75);
+}
+
+.logo img{
+
+    position:absolute;
+    top:0;
+    left:0;
+    width: 180px;
+    padding:10px 20px 15px 20px;
+    margin-left:200px;
+}
+
+.menu{
+
+    overflow:auto;
+    position:absolute;
+    top:0;
+    right:0;
+    margin-right: 200px;
+    font-weight: 700;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0 0 0 130;
+}
+
+/*Para que los elementos floten a la izq y se vean en línea*/
+
+.menu li{
+    float:left;
+}
+
+/*Ahora damos estilo a los propios enlaces*/
+
+.menu a{
+    margin-left:20px;
+
+    /*Le damos 70px igual que al alto de al header para que queden bien colocados los elementos del menú y no pegados arriba*/
+    line-height: 70px;
+    text-align: right;
+    text-decoration: none;
+    color:black;
+    
+}
+
+/*Cuando pasemos el ratón por encima la letra del menú cambiará a azul*/
+.menu a:hover{
+    color:blue;
+}
+
+.menu i:hover{
+    color:black;
+}
+
+/*Damos estilo a las redes sociales*/
+
+.menu i{
+    margin-top: 25px;
+    margin-left:20px;
+    size: 18px;
+    color: black;
+}
+
+/*---------------------------------Estilos del MAIN---------------------------------------------------------------------------*/
+
+/*Le damos ese z index para que luego se vea por debajo del header*/
+
+.slider{
+    z-index: 10;
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    padding-top: 300px;
+    /*entramos en webgradients.com y cogemos un gradiente*/
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+/*Damos estilo al h1*/
+.titulo{
+    font-weight: 700;
+    font-size: 84px;
+    color:#fff;
+
+}
+
+.titulo2{
+    font-size: 44px;
+    font-weight: 700;
+    color: #cc46af;
+    margin-bottom: 40px;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 15px 40px;
+    background: #000000;
+    color:#fff;
+    margin:auto;
+    
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.seccion2{
+    z-index: 10;
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:750px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.imagen{
+
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.texto{
+    width:1200px;
+    margin: auto;
+    color:#000000;
+    font-weight: 700;
+    padding:20px;
+
+}
+.ola{
+
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+
+.parallax{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("./Imagenes/niclas-illg-zEBqF_E2FIY-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /*así queda el contenido, es decir, el texto en elcentro*/
+    padding-top: calc(50vh - 50px);
+}
+
+.titulo3{
+    color:#ffffff;
+    text-align: center;
+   
+    margin: auto;
+    line-height:100px;
+    font-size:44px;
+
+}
+
+.footer{
+    text-align: center;
+    font-size: 16px;
+    color:#000000;
+    background: #f2f2f2;
+    height:60px;
+    line-height: 60px;
+
+}
